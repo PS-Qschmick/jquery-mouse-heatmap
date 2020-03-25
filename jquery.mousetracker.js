@@ -150,7 +150,7 @@
                     base.baseTime = movements[0].time;
                 }
                 if(typeof movements[curNdx+1] !== "undefined"){ //check that we have more data to display
-                    if(movements[curNdx+1].time <= baseTime + ticks){ //check if we have spent the appropriate amount of time displaying cur position, if so
+                    if(movements[curNdx+1].time <= base.baseTime + ticks){ //check if we have spent the appropriate amount of time displaying cur position, if so
                         curNdx++; //move to next elements
                     }
                 } else {
